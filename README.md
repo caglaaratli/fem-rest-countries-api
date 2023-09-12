@@ -1,7 +1,6 @@
-fem-rest-countries-api-plum.vercel.app
+https://fem-rest-countries-api-plum.vercel.app/
 
 # fem-rest-countries-app
-
 
 This template should help get you started developing with Vue 3 in Vite.
 
