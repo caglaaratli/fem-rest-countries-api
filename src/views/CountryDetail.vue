@@ -25,7 +25,7 @@
                 <span class="font-light">{{ value }}</span>
             </p>
         </div>
-            <p v-if="borders" class="pt-5">
+            <p v-if="borders" class="pt-5 flex flex-wrap" >
                 <span class="pt-1 font-semibold">Border Countries:</span>
                 <span
                     v-for="(border, key) in borders"
@@ -57,9 +57,11 @@ const countryDetail = {
      nativeName : countryDetails?.altSpellings[1],
      population : countryDetails?.population ,
      region :countryDetails?.region,
-     subRegion: countryDetails?.subRegion,
+     subRegion: countryDetails?.subregion,
      capital:countryDetails?.capital?.[0],
      topLevelDomain:countryDetails?.tld?.[0],
+     currencies :Object.values(countryDetails?.currencies)[0].name,
+     languages : Object.values(countryDetails?.languages).join(',')
 }
 
 const returnMainPage = () => {
